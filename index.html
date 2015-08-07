@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imgur Gallery</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript">
+    function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+    }</script>
+</head>
+<body>
+
+
+<div class="content">
+<h1>Explore top topics without the hassle of clicking</h1> 
+<div class="input-container">
+<input class="amount-input" onclick="clearBox('imgur-gal')"  type="text" placeholder="How many?">
+<input class="url-input" type="text" placeholder="e.g pics">
+  </div>
+<button>Try it</button>
+</div>
+<div class="images" id="imgur-gal">
+
+</div>
+</body>
+</html>
