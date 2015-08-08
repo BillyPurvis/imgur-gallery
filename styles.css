@@ -3,9 +3,11 @@
  ** Structure 
   */
  body {
+  width: 100%;
   margin: 0;
   color: #fff;
   background: #2f4154;
+  overflow: hidden;
 }
 
 /*
@@ -68,15 +70,11 @@ button:focus {
   */
 main {
   height: 75vh;
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
-.flex-container {
-  width: 100%;
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  transform: translate(-50%, 12%);
-}
+
 /*
  ** Images
  */
@@ -106,6 +104,9 @@ img {
   border-radius: 6px;
   overflow: hidden;
 }
+.flex-container {
+  
+}
 
 /* 
  ** Media Queries
@@ -115,4 +116,12 @@ img {
   img {
     width: 300px;
   }
+  .flex-container {
+  width: 100%;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, 12%);
+}
 }
