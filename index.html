@@ -2,9 +2,13 @@
 <html>
 <head>
 	<title>Imgur Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,400|Merriweather' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" type="text/css" href="./styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
+  
   <script type="text/javascript">
     function clearBox(elementID)
 {
@@ -12,16 +16,19 @@
     }</script>
 </head>
 <body>
-
-
-<div class="content">
-<h1>Explore top topics without the hassle of clicking</h1> 
-<div class="input-container">
-<input class="amount-input" onclick="clearBox('imgur-gal')"  type="text" placeholder="How many?">
-<input class="url-input" type="text" placeholder="e.g pics">
+<main>
+  <div class="flex-container">
+    <div class="input-container">
+      <h1 id="page-title">Topic View</h1>
+      <p>
+        Search your favorite Imgur topics without the hassle of comments or upvotes, just pure images.
+      </p>
+      <input class="amount-input" onclick="clearBox('imgur-gal')" type="text" placeholder="How many?">
+      <input class="url-input" type="text" placeholder="e.g pics">
+      <button>Try it</button>
+    </div>
   </div>
-<button>Try it</button>
-</div>
+</main>
 <div class="images" id="imgur-gal">
 
 </div>
