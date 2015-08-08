@@ -1,11 +1,8 @@
 
-
 $(function() {
-
-
     // Each time the button element is clicked.
 $('button').on('click', function() {
- 
+
   // Take the number in textbox, convert it into integer.
   var num = parseInt($('.amount-input').val(), 10);
   
@@ -42,11 +39,12 @@ $('button').on('click', function() {
             // Now, we have everything filtered and have num amount of images
             // in the array. Create an img tag and append it to the div.
             $('#imgur-gal').append(
-                $("<img/>", { src: image.link })
+                $("<a/>", { href: image.link}).append(
+                $("<img/>", { src: image.link, target: "_blank"})
+                )
             );
         });
     }
   });
 });
-
 });

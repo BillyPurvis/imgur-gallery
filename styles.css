@@ -60,13 +60,18 @@ button {
   border: transparent;
   background: #1abc9c;
 }
+button:focus {
+  outline: transparent;
+}
+/* 
+ ** Main Content
+  */
 main {
-  height: 100vh;
+  height: 75vh;
   position: relative;
 }
 .flex-container {
   width: 100%;
-  height: 100vh;
   position: absolute;
   top: 12%;
   left: 50%;
@@ -76,7 +81,7 @@ main {
  ** Images
  */
 .images {
-    display: flex;
+  display: flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -webkit-flex;
@@ -89,10 +94,25 @@ main {
   /* Reverses the row direction */
   
 }
-img {
+a {
   width: 90%;
-  margin: 10px auto;
+  margin: 5px auto;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  text-align: center;
   max-height: 300px;
   border-radius: 6px;
-  border: 3px solid #808080;
+  overflow: hidden;
+}
+
+/* 
+ ** Media Queries
+  */
+@media (min-width: 420px){
+  a,
+  img {
+    width: 300px;
+  }
 }
