@@ -1,4 +1,4 @@
-# angular-store-app
+# Imgur Gallery Search
 ====================
 
 Author: Billy Purvis <br>
